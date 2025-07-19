@@ -1,0 +1,2 @@
+INSERT INTO Employee 
+VALUES (10101, 'Rahul', 'BBSR', '9876543210');
