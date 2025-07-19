@@ -1,0 +1,19 @@
+-- Add a new column CGPA
+ALTER TABLE Student ADD CGPA DECIMAL(3,2);
+-- Output:
+-- Query OK, 0 rows affected (0.02 sec)
+-- +------+--------+------------+------------+------+------+
+-- | Roll | Name   | DOB        | Address    | Age  | CGPA |
+-- +------+--------+------------+------------+------+------+
+-- |    1 | Amit   | 2005-04-15 | Cuttack    |   20 | NULL |
+-- |    2 | Sourav | 2003-07-22 | Puri       |   21 | NULL |
+-- |    3 | Priya  | 2006-11-30 | Rourkela   |   18 | NULL |
+-- |    4 | Rashmi | 2002-02-12 | Sambalpur  |   23 | NULL |
+-- |    5 | Manas  | 2007-01-01 | Balasore   |   18 | NULL |
+-- |    6 | Sita   | 2001-05-10 | Baripada   |   24 | NULL |
+-- |    7 | Rahul  | 2004-09-18 | Berhampur  |   20 | NULL |
+-- |    8 | Anita  | 2000-06-25 | Kendujhar  |   25 | NULL |
+-- |    9 | Nikhil | 2008-12-05 | Angul      |   16 | NULL |
+-- |   10 | Sneha  | 2003-03-17 | Jharsuguda |   22 | NULL |
+-- +------+--------+------------+------------+------+------+
+-- 10 rows in set (0.00 sec)

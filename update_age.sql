@@ -1,0 +1,21 @@
+-- Update the Age column by calculating from DOB and current system date
+UPDATE Student
+SET Age = TIMESTAMPDIFF(YEAR, DOB, CURDATE());
+-- Output:
+-- Query OK, 10 rows affected (0.00 sec)
+-- Rows matched: 10  Changed: 10  Warnings: 0
+-- +------+--------+------------+------------+------+
+-- | Roll | Name   | DOB        | Address    | Age  |
+-- +------+--------+------------+------------+------+
+-- |    1 | Amit   | 2005-04-15 | Cuttack    |   20 |
+-- |    2 | Sourav | 2003-07-22 | Puri       |   21 |
+-- |    3 | Priya  | 2006-11-30 | Rourkela   |   18 |
+-- |    4 | Rashmi | 2002-02-12 | Sambalpur  |   23 |
+-- |    5 | Manas  | 2007-01-01 | Balasore   |   18 |
+-- |    6 | Sita   | 2001-05-10 | Baripada   |   24 |
+-- |    7 | Rahul  | 2004-09-18 | Berhampur  |   20 |
+-- |    8 | Anita  | 2000-06-25 | Kendujhar  |   25 |
+-- |    9 | Nikhil | 2008-12-05 | Angul      |   16 |
+-- |   10 | Sneha  | 2003-03-17 | Jharsuguda |   22 |
+-- +------+--------+------------+------------+------+
+-- 10 rows in set (0.00 sec)
